@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
     <title>The Wedding Of Firdaus & Arini</title>
-    <meta name="description" content="Tanpa mengurangi rasa hormat, izinkan kami mengundang Bapak/Ibu/Saudara/i ke acara akad nikah kami.">
+    <meta name="description" content="Tanpa Ecuadorian rasa hormat, izinkan kami mengundang Bapak/Ibu/Saudara/i ke acara akad nikah kami.">
     
-    <meta property="og:url" content="https://firdanin.github.io/undangan-firdaus-arini/">
+    <meta property="og:url" content="https://firdanin.github.io/undangan/">
     <meta property="og:type" content="article">
     <meta property="og:title" content="The Wedding Of Firdaus & Arini">
-    <meta property="og:description" content="Rabu, 08 Juli 2026 - Tanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i, teman sekaligus sahabat, untuk menghadiri acara pernikahan kami.">
-    <meta property="og:image" content="https://firdanin.github.io/undangan-firdaus-arini/cover.jpg.png">
-    <meta property="og:image:secure_url" content="https://firdanin.github.io/undangan-firdaus-arini/cover.jpg.png">
-    <meta property="og:image:type" content="image/png">
+    <meta property="og:description" content="Kamis, 04 Juni 2026 - Tanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i, teman sekaligus sahabat, untuk menghadiri acara pernikahan kami.">
+    <meta property="og:image" content="https://firdanin.github.io/undangan/cover.jpg">
+    <meta property="og:image:secure_url" content="https://firdanin.github.io/undangan/cover.jpg">
+    <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+
     <style>
         body, html {
             margin: 0;
@@ -67,6 +68,7 @@
             margin-top: 15px;
         }
 
+        /* ⬇️ TOMBOL DIKASIH ANIMASI BERGERAK (PULSE) ⬇️ */
         .btn-buka {
             background-color: #8c7036;
             color: white;
@@ -78,7 +80,27 @@
             cursor: pointer;
             margin-top: 25px;
             box-shadow: 0 5px 15px rgba(140, 112, 54, 0.3);
+            
+            /* Menjalankan animasi bernama 'denyut' selama 1.5 detik berulang terus-menerus */
+            animation: denyut 1.5s infinite ease-in-out; 
         }
+        
+        /* Rumus gerakan animasinya: membesar sedikit lalu mengecil kembali */
+        @keyframes denyut {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 5px 15px rgba(140, 112, 54, 0.3);
+            }
+            50% {
+                transform: scale(1.08); /* membesar 8% */
+                box-shadow: 0 8px 25px rgba(140, 112, 54, 0.5); /* efek cahayanya makin kuat */
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 5px 15px rgba(140, 112, 54, 0.3);
+            }
+        }
+        /* ⬆️ SELESAI ANIMASI TOMBOL ⬆️ */
         
         video {
             display: none;
@@ -102,7 +124,7 @@
         <h1>Firdaus & Arini</h1>
         
         <p>Yang insya Allah akan dilaksanakan pada:</p>
-        <p class="waktu">Bulan Juli 2026</p>
+        <p class="waktu">Kamis, 04 Juni 2026</p>
         
         <button class="btn-buka" id="tombolPrank">BUKA UNDANGAN</button>
     </div>
@@ -128,5 +150,7 @@
             video.play();
         });
     </script>
+</body>
+</html>
 </body>
 </html>
